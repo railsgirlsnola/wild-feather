@@ -29,4 +29,4 @@ NOLAcoffee = [
 
 module.exports = (robot) ->
   robot.hear /.*(order my coffee).*/i, (msg) ->
-    msg.send msg.random coffee_shops
+    msg.send msg.random NOLAcoffee
