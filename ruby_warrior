@@ -30,4 +30,25 @@ end
 
 -- Elizabeth --
 
+class Player
+  def play_turn(warrior)
+    
+    @health ||= warrior.health
+    min_health = 15
+      
+      if warrior.feel.empty? 
+        if (warrior.health > min_health)
+          warrior.walk!
+        else 
+          warrior.rest!
+        end
+      else
+        warrior.attack!
+      end
+    
+    
+  end
+end
+  
+
 -- Kayla --
